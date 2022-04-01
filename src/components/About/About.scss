@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.about {
+  @include flex-container($direction: column);
+  margin: 0rem 0rem 3rem 0rem;
+
+  &__subtitle {
+    margin: 1rem 0;
+  }
+
+  &__body {
+    margin: 1rem 0;
+  }
+
+  & a:first-child {
+    margin: 0rem 1rem 0rem 0rem;
+  }
+}

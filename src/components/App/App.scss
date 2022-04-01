@@ -1,2 +1,18 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
+
+.layout {
+  @include flex-container($direction: column, $align: center);
+  padding: 4rem 2rem 2rem 2rem;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @include media(desktop) {
+    max-width: 48rem;
+    left: 25%;
+  }
+}
