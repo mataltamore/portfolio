@@ -42,6 +42,8 @@ p {
   line-height: 1.25rem;
   letter-spacing: 0.005rem;
   font-size: 0.875rem;
+  font-weight: 500;
+  color: $c-text;
 }
 
 a {
@@ -54,8 +56,4 @@ a {
     text-decoration: underline;
     transition: all 250ms ease-out;
   }
-}
-
-p {
-  color: $c-text;
 }
