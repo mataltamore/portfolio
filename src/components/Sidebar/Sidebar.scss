@@ -4,6 +4,13 @@
 .sidebar {
   @include flex-container($direction: column);
   gap: 3.125rem;
+
+  @include media(desktop) {
+    height: 650px;
+    overflow: auto;
+    min-width: calc(60% - 2rem);
+    padding: 2rem;
+  }
 }
 
 .cards {
@@ -13,6 +20,12 @@
   &__box {
     padding: 2rem;
     background-color: $c-box;
+    transition: 250ms ease;
+
+    &:hover {
+      transform: scale(1.08);
+      transition: 250ms ease;
+    }
 
     &__range {
       font-size: 0.75rem;

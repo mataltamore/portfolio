@@ -6,7 +6,12 @@
   padding: 4rem 2rem 2rem 2rem;
   margin: 0 auto;
 
-  @include media(tablet) {
+  /*@include media(tablet) {
     max-width: 48rem;
+  }*/
+
+  @include media(desktop) {
+    @include flex-container($direction: row, $align: center);
+    gap: 2rem;
   }
 }
