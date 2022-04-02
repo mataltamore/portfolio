@@ -7,13 +7,27 @@
 
   &__subtitle {
     margin: 1rem 0;
+    color: $c-link;
   }
 
   &__body {
     margin: 1rem 0;
   }
+}
 
-  & a:first-child {
-    margin: 0rem 1rem 0rem 0rem;
+.social {
+  @include flex-container();
+  gap: 0.875rem;
+
+  &__link {
+    @include flex-container($align: center);
+    gap: 0.3125rem;
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+      filter: invert(11%) sepia(99%) saturate(7159%) hue-rotate(271deg)
+        brightness(116%) contrast(127%);
+    }
   }
 }
