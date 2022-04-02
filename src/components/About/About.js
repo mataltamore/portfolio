@@ -2,6 +2,26 @@ import React from "react";
 import "./About.scss";
 import linkIcon from "../../images/links.svg";
 
+const BUTTON = [
+  {
+    label: "Linkedin",
+    href: "#linkedin",
+  },
+  {
+    label: "Github",
+    href: "#github",
+  },
+];
+
+const Button = ({ label, href }) => {
+  return (
+    <a href={href} className="social__link">
+      {label}
+      <img src={linkIcon} alt="LinksTo" className="social__link__icon" />
+    </a>
+  );
+};
+
 const About = () => {
   return (
     <section className="about">
@@ -16,14 +36,9 @@ const About = () => {
         eveniet similique officiis expedita adipisci. Earum, iste.
       </p>
       <div className="social">
-        <a href="#linkedin" className="social__link">
-          Linkedin
-          <img src={linkIcon} alt="LinksTo" className="social__link__icon" />
-        </a>
-        <a href="#github" className="social__link">
-          Github
-          <img src={linkIcon} alt="LinksTo" className="social__link__icon" />
-        </a>
+        {BUTTON.map((btn) => {
+          return <Button key={btn.label} {...btn} />;
+        })}
       </div>
     </section>
   );

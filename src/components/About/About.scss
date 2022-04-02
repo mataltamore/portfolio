@@ -24,10 +24,7 @@
     gap: 0.3125rem;
 
     &__icon {
-      width: 24px;
-      height: 24px;
-      filter: invert(11%) sepia(99%) saturate(7159%) hue-rotate(271deg)
-        brightness(116%) contrast(127%);
+      @include icon-setup(24px, 24px);
     }
   }
 }

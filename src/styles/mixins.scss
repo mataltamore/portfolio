@@ -25,3 +25,10 @@
   justify-content: $justify;
   flex-wrap: $wrap;
 }
+
+@mixin icon-setup($w, $h) {
+  width: $w;
+  height: $h;
+  filter: invert(11%) sepia(99%) saturate(7159%) hue-rotate(271deg)
+    brightness(116%) contrast(127%);
+}

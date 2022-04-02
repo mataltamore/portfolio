@@ -46,10 +46,7 @@
       margin: 1rem 0rem 0rem 0rem;
 
       &__icon {
-        width: 18px;
-        height: 18px;
-        filter: invert(11%) sepia(99%) saturate(7159%) hue-rotate(271deg)
-          brightness(116%) contrast(127%);
+        @include icon-setup(18px, 18px);
       }
     }
   }

@@ -2,107 +2,96 @@ import React from "react";
 import linkIcon from "../../images/links.svg";
 import "./Sidebar.scss";
 
-const Work = () => {
+const CV = [
+  [
+    {
+      range: "may 2021 - present",
+      name: "Deloitte Digital",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+    },
+  ],
+  [
+    {
+      range: "may 2021 - present",
+      name: "name",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+      site: {
+        name: "Github",
+        link: "#github1",
+      },
+    },
+    {
+      range: "may 2021 - present",
+      name: "name",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+      site: {
+        name: "Github",
+        link: "#github2",
+      },
+    },
+    {
+      range: "may 2021 - present",
+      name: "name",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+      site: {
+        name: "Github",
+        link: "#github3",
+      },
+    },
+  ],
+  [
+    {
+      range: "sept 2016 - apr 2021",
+      name: "University of Milan",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+    },
+  ],
+];
+
+const Card = ({ data }) => {
   return (
     <section className="cards">
-      <div className="cards__box">
-        <h3 className="cards__box__range">march 2021 - present</h3>
-        <h3 className="cards__box__title">Deloitte Digital</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat
-          commodi tempora corporis iure perspiciatis quisquam quasi optio saepe
-          veritatis repudiandae.
-        </p>
-      </div>
+      {data.map((item) => {
+        return (
+          <Box {...item}>{item.site ? <Button site={item.site} /> : null}</Box>
+        );
+      })}
     </section>
   );
 };
 
-const SideProjects = () => {
+const Box = (props) => {
+  const { range, name, description } = props;
   return (
-    <section className="cards">
-      <div className="cards__box">
-        <h3 className="cards__box__range">march 2021 - present</h3>
-        <h3 className="cards__box__title">Open source project #1</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat
-          commodi tempora corporis iure perspiciatis quisquam quasi optio saepe
-          veritatis repudiandae.
-        </p>
-        <a href="#github" className="cards__box__link">
-          Github
-          <img
-            src={linkIcon}
-            alt="LinksTo"
-            className="cards__box__link__icon"
-          />
-        </a>
-      </div>
-      <div className="cards__box">
-        <h3 className="cards__box__range">march 2021 - present</h3>
-        <h3 className="cards__box__title">Open source project #2</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat
-          commodi tempora corporis iure perspiciatis quisquam quasi optio saepe
-          veritatis repudiandae.
-        </p>
-        <a href="#github" className="cards__box__link">
-          Github
-          <img
-            src={linkIcon}
-            alt="LinksTo"
-            className="cards__box__link__icon"
-          />
-        </a>
-      </div>
-      <div className="cards__box">
-        <h3 className="cards__box__range">march 2021 - present</h3>
-        <h3 className="cards__box__title">Open source project #3</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat
-          commodi tempora corporis iure perspiciatis quisquam quasi optio saepe
-          veritatis repudiandae.
-        </p>
-        <a href="#github" className="cards__box__link">
-          Github
-          <img
-            src={linkIcon}
-            alt="LinksTo"
-            className="cards__box__link__icon"
-          />
-        </a>
-      </div>
-    </section>
+    <div className="cards__box">
+      <h3 className="cards__box__range">{range}</h3>
+      <h3 className="cards__box__title">{name}</h3>
+      <p>{description}</p>
+      {props.children}
+    </div>
   );
 };
 
-const Education = () => {
+const Button = ({ site }) => {
   return (
-    <section className="cards">
-      <div className="cards__box">
-        <h3 className="cards__box__range">march 2021 - present</h3>
-        <h3 className="cards__box__title">University of Milan</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat
-          commodi tempora corporis iure perspiciatis quisquam quasi optio saepe
-          veritatis repudiandae.
-        </p>
-      </div>
-    </section>
+    <a href={site.link} className="cards__box__link">
+      {site.name}
+      <img src={linkIcon} alt="LinksTo" className="cards__box__link__icon" />
+    </a>
   );
 };
 
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <Work />
-      <SideProjects />
-      <Education />
+      {CV.map((array) => {
+        return <Card data={array} />;
+      })}
     </aside>
   );
 };
