@@ -1,17 +1,7 @@
 import React from "react";
 import "./About.scss";
 import linkIcon from "../../images/links.svg";
-
-const BUTTON = [
-  {
-    label: "Linkedin",
-    href: "#linkedin",
-  },
-  {
-    label: "Github",
-    href: "#github",
-  },
-];
+import SOCIAL from "../../Content/social.json";
 
 const Button = ({ label, href }) => {
   return (
@@ -36,7 +26,7 @@ const About = () => {
         eveniet similique officiis expedita adipisci. Earum, iste.
       </p>
       <div className="social">
-        {BUTTON.map((btn) => {
+        {SOCIAL.data.map((btn) => {
           return <Button key={btn.label} {...btn} />;
         })}
       </div>

@@ -1,0 +1,47 @@
+{
+  "data": [
+    [
+      {
+        "range": "may 2021 - present",
+        "name": "Deloitte Digital",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae."
+      }
+    ],
+    [
+      {
+        "range": "may 2021 - present",
+        "name": "name",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+        "site": {
+          "name": "Github",
+          "link": "#github1"
+        }
+      },
+      {
+        "range": "may 2021 - present",
+        "name": "name",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+        "site": {
+          "name": "Github",
+          "link": "#github2"
+        }
+      },
+      {
+        "range": "may 2021 - present",
+        "name": "name",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+        "site": {
+          "name": "Github",
+          "link": "#github3"
+        }
+      }
+    ],
+    [
+      {
+        "range": "sept 2016 - apr 2021",
+        "name": "University of Milan",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae."
+      }
+    ]
+  ]
+}

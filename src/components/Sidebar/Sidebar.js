@@ -1,57 +1,7 @@
 import React from "react";
 import linkIcon from "../../images/links.svg";
 import "./Sidebar.scss";
-
-const CV = [
-  [
-    {
-      range: "may 2021 - present",
-      name: "Deloitte Digital",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
-    },
-  ],
-  [
-    {
-      range: "may 2021 - present",
-      name: "name",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
-      site: {
-        name: "Github",
-        link: "#github1",
-      },
-    },
-    {
-      range: "may 2021 - present",
-      name: "name",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
-      site: {
-        name: "Github",
-        link: "#github2",
-      },
-    },
-    {
-      range: "may 2021 - present",
-      name: "name",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
-      site: {
-        name: "Github",
-        link: "#github3",
-      },
-    },
-  ],
-  [
-    {
-      range: "sept 2016 - apr 2021",
-      name: "University of Milan",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
-    },
-  ],
-];
+import CV from "../../Content/cv.json";
 
 const Card = ({ data }) => {
   return (
@@ -89,7 +39,7 @@ const Button = ({ site }) => {
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      {CV.map((array) => {
+      {CV.data.map((array) => {
         return <Card data={array} />;
       })}
     </aside>
