@@ -16,38 +16,42 @@
 .cards {
   @include flex-container($direction: column);
   gap: 1rem;
+}
 
-  &__box {
-    padding: 2rem;
-    background-color: $c-box;
+.box {
+  padding: 2rem;
+  background-color: $c-box;
+  transition: 250ms ease;
+
+  &:hover {
+    transform: scale(1.08);
     transition: 250ms ease;
+  }
 
-    &:hover {
-      transform: scale(1.08);
-      transition: 250ms ease;
-    }
+  &__range {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+  }
 
-    &__range {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 0.15rem;
-    }
+  &__title {
+    margin: 1rem 0rem;
+  }
+}
 
-    &__title {
-      margin: 1rem 0rem;
-    }
+.link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin: 1rem 0rem 0rem 0rem;
 
-    &__link {
-      @include flex-container($align: center);
-      gap: 0.3125rem;
-      font-weight: 600;
-      font-size: 0.875rem;
-      margin: 1rem 0rem 0rem 0rem;
+  &__wrapper {
+    @include flex-container($align: center);
+    gap: 0.3125rem;
 
-      &__icon {
-        @include icon-setup(18px, 18px);
-      }
+    &__icon {
+      @include icon-setup(18px, 18px);
     }
   }
 }

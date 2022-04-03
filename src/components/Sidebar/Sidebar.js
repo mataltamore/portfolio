@@ -18,9 +18,9 @@ const Card = ({ data }) => {
 const Box = (props) => {
   const { range, name, description } = props;
   return (
-    <div className="cards__box">
-      <h3 className="cards__box__range">{range}</h3>
-      <h3 className="cards__box__title">{name}</h3>
+    <div className="box">
+      <h3 className="box__range">{range}</h3>
+      <h3 className="box__title">{name}</h3>
       <p>{description}</p>
       {props.children}
     </div>
@@ -29,9 +29,11 @@ const Box = (props) => {
 
 const Button = ({ site }) => {
   return (
-    <a href={site.link} className="cards__box__link">
-      {site.name}
-      <img src={linkIcon} alt="LinksTo" className="cards__box__link__icon" />
+    <a href={site.link} className="link">
+      <div className="link__wrapper">
+        {site.name}
+        <img src={linkIcon} alt="LinksTo" className="link__wrapper__icon" />
+      </div>
     </a>
   );
 };
