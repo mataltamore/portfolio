@@ -6,7 +6,7 @@
   gap: 3.125rem;
 
   @include media(desktop) {
-    height: 37.5rem;
+    height: calc(100vh - 12rem);
     overflow: auto;
     min-width: calc(60% - 2rem);
     padding: 2rem;
@@ -26,6 +26,13 @@
   &:hover {
     transform: scale(1.08);
     transition: 250ms ease;
+  }
+
+  @include media(tablet) {
+    &:hover {
+      transform: scale(1.05);
+      transition: 250ms ease;
+    }
   }
 
   &__range {

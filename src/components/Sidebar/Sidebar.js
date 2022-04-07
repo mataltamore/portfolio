@@ -1,7 +1,7 @@
 import React from "react";
 import linkIcon from "../../images/links.svg";
 import "./Sidebar.scss";
-import CV from "../../Content/cv.json";
+import CV from "../../content/cv.json";
 
 const Card = ({ data }) => {
   return (

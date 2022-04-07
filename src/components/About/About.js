@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.scss";
 import linkIcon from "../../images/links.svg";
-import SOCIAL from "../../Content/social.json";
+import SOCIAL from "../../content/social.json";
 
 const Button = ({ label, href }) => {
   return (
