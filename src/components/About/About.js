@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.scss";
 import linkIcon from "../../images/links.svg";
+import downloadIcon from "../../images/download.svg";
+import resumePdf from "../../content/Matteo_Altamore_Resume.pdf";
 import SOCIAL from "../../content/social.json";
 
 const Button = ({ label, href }) => {
@@ -16,20 +18,22 @@ const About = () => {
   return (
     <section className="about">
       <h1>Matteo Altamore</h1>
-      <h3 className="about__subtitle">Web developer</h3>
+      <h3 className="about__subtitle">Web Developer</h3>
       <p className="about__body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-        repellendus quibusdam tempora provident facere doloremque libero cum
-        sapiente earum corporis numquam culpa ipsam aperiam, et officia
-        recusandae distinctio obcaecati velit? Ea blanditiis aliquid ad sed
-        nisi. Exercitationem veritatis voluptate repellendus quasi ipsum culpa
-        eveniet similique officiis expedita adipisci. Earum, iste.
+        Hi, glad to see you here! I'm Matteo, an enthusiastic React Frontend
+        Engineer and currently I'm working on a big project for Deloitte, but
+        during my free time I love make useful libraries and websites about my
+        hobbies and also read a lot of books and comics!
       </p>
       <div className="social">
         {SOCIAL.data.map((btn) => {
           return <Button key={btn.label} {...btn} />;
         })}
       </div>
+      <a href={resumePdf} download className="resume">
+        Get my CV
+        <img src={downloadIcon} alt="DownloadCV" />
+      </a>
     </section>
   );
 };

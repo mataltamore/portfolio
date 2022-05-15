@@ -4,43 +4,40 @@
       {
         "range": "may 2021 - present",
         "name": "Deloitte Digital",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae."
+        "description": "Currently working on a website with Next.js, React.js, Redux Toolkit, RTK Query, HTML5, CSS3 (SASS/SCSS, responsive design), Material UI and Ant Design, I've also made a middleware server API with Nest.js and Typescript."
+      },
+      {
+        "range": "june 2015 - aug 2015",
+        "name": "Beta80 Group",
+        "description": "Built an entity-relationship database using T-SQL which contained data about songs and authors and then I've built a Java7 application to fetch the data from the database in order to show them in the UI using the Java Swing library. Also stored the user credentials in the database with security checks."
+      },
+      {
+        "range": "june 2014 - aug 2014",
+        "name": "Nyx Solutions",
+        "description": "Developed different wordpress websites with one or more pages, with forms and newsletter subscriptions."
       }
     ],
     [
       {
-        "range": "may 2021 - present",
-        "name": "name",
+        "range": "may 2022",
+        "name": "Pokedex Website",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
         "site": {
           "name": "Github",
-          "link": "#github1"
+          "link": "https://github.com/mataltamore/pokedex-site"
         }
       },
       {
-        "range": "may 2021 - present",
-        "name": "name",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
-        "site": {
-          "name": "Github",
-          "link": "#github2"
-        }
-      },
-      {
-        "range": "may 2021 - present",
-        "name": "name",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
-        "site": {
-          "name": "Github",
-          "link": "#github3"
-        }
+        "range": "nov 2020 - apr 2021",
+        "name": "NIST Lightweight Cryptography Competition",
+        "description": "Made a theoretical attack to the Elephant (V1.1) cipher with the help of a script written in python and with a SAT Solver library."
       }
     ],
     [
       {
         "range": "sept 2016 - apr 2021",
-        "name": "University of Milan",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae."
+        "name": "Univerity of Milan",
+        "description": "Bachelor's Degree in Computer Science. My favorite courses were Algorithms and Data Structures, Databases, Software Engineer and Design Patterns, Cryptography"
       }
     ]
   ]

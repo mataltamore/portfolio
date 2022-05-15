@@ -28,3 +28,14 @@
     }
   }
 }
+
+.resume {
+  @include flex-container($align: center);
+  gap: 0.5rem;
+
+  padding-top: 1rem;
+
+  & > img {
+    @include icon-setup(21px, 21px);
+  }
+}
