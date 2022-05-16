@@ -21,7 +21,7 @@
       {
         "range": "may 2022",
         "name": "Pokedex Website",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab amet voluptatem, esse similique quia obcaecati cum, fugit placeat commodi tempora corporis iure perspiciatis quisquam quasi optio saepe veritatis repudiandae.",
+        "description": "Built a website that allows the user to search data about a Pokemon with React and Typescript (into Next.js framework). Used the open source RESTful API PokeAPIv2 to fetch the JSON data. Open points: complex filter in the homepage, dark mode theme",
         "site": {
           "name": "Github",
           "link": "https://github.com/mataltamore/pokedex-site"

@@ -22,7 +22,7 @@ const About = () => {
       <p className="about__body">
         Hi, glad to see you here! I'm Matteo, an enthusiastic React Frontend
         Engineer and currently I'm working on a big project for Deloitte, but
-        during my free time I love make useful libraries and websites about my
+        during my free time I love to make useful scripts and websites about my
         hobbies and also read a lot of books and comics!
       </p>
       <div className="social">
