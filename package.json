@@ -16,7 +16,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "portfolio -d build",
+    "deploy": "portfolio -b main -d build",
     "start": "react-scripts start",
     "start:format": "react-scripts start prettier --write --loglevel silent",
     "build": "react-scripts build",
