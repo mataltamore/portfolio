@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cb75cae5.css",
-    "main.js": "/portfolio/static/js/main.8973015d.js",
-    "static/media/Matteo_Altamore_Resume.pdf": "/portfolio/static/media/Matteo_Altamore_Resume.8048e46f9866708e7f62.pdf",
+    "main.css": "/portfolio/static/css/main.1b10b436.css",
+    "main.js": "/portfolio/static/js/main.3c590f77.js",
+    "static/media/Matteo_Altamore_Resume.pdf": "/portfolio/static/media/Matteo_Altamore_Resume.4a956a6dbab083ed1ffb.pdf",
     "static/media/download.svg": "/portfolio/static/media/download.e2d5a3aa1de66989d7e7161ab4c43613.svg",
     "static/media/links.svg": "/portfolio/static/media/links.fa10c79f8225bc2f6ee854098ee442b6.svg",
     "index.html": "/portfolio/index.html",
-    "main.cb75cae5.css.map": "/portfolio/static/css/main.cb75cae5.css.map",
-    "main.8973015d.js.map": "/portfolio/static/js/main.8973015d.js.map"
+    "main.1b10b436.css.map": "/portfolio/static/css/main.1b10b436.css.map",
+    "main.3c590f77.js.map": "/portfolio/static/js/main.3c590f77.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb75cae5.css",
-    "static/js/main.8973015d.js"
+    "static/css/main.1b10b436.css",
+    "static/js/main.3c590f77.js"
   ]
 }
