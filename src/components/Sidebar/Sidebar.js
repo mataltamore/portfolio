@@ -29,7 +29,7 @@ const Box = (props) => {
 
 const Button = ({ site }) => {
   return (
-    <a href={site.link} className="link">
+    <a href={site.link} target="_blank" rel="noreferrer" className="link">
       <div className="link__wrapper">
         {site.name}
         <img src={linkIcon} alt="LinksTo" className="link__wrapper__icon" />

@@ -7,7 +7,7 @@ import SOCIAL from "../../content/social.json";
 
 const Button = ({ label, href }) => {
   return (
-    <a href={href} className="social__link">
+    <a href={href} target="_blank" rel="noreferrer" className="social__link">
       {label}
       <img src={linkIcon} alt="LinksTo" className="social__link__icon" />
     </a>
