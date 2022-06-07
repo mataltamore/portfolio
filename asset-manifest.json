@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1b10b436.css",
-    "main.js": "/portfolio/static/js/main.3c590f77.js",
-    "static/media/Matteo_Altamore_Resume.pdf": "/portfolio/static/media/Matteo_Altamore_Resume.4a956a6dbab083ed1ffb.pdf",
+    "main.js": "/portfolio/static/js/main.d37618fc.js",
+    "static/media/Matteo_Altamore_Resume.pdf": "/portfolio/static/media/Matteo_Altamore_Resume.19616668979f4dc7ed2f.pdf",
     "static/media/download.svg": "/portfolio/static/media/download.e2d5a3aa1de66989d7e7161ab4c43613.svg",
     "static/media/links.svg": "/portfolio/static/media/links.fa10c79f8225bc2f6ee854098ee442b6.svg",
     "index.html": "/portfolio/index.html",
     "main.1b10b436.css.map": "/portfolio/static/css/main.1b10b436.css.map",
-    "main.3c590f77.js.map": "/portfolio/static/js/main.3c590f77.js.map"
+    "main.d37618fc.js.map": "/portfolio/static/js/main.d37618fc.js.map"
   },
   "entrypoints": [
     "static/css/main.1b10b436.css",
-    "static/js/main.3c590f77.js"
+    "static/js/main.d37618fc.js"
   ]
 }
