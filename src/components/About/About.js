@@ -21,9 +21,9 @@ const About = () => {
       <h3 className="about__subtitle">Web Developer</h3>
       <p className="about__body">
         Hi, glad to see you here! I'm Matteo, an enthusiastic React Frontend
-        Engineer and currently I'm working on a big project for Deloitte, but
-        during my free time I love to make useful scripts and websites about my
-        hobbies and also read a lot of books and comics!
+        Engineer and currently I'm working on a big project at Deloitte, but
+        during my free time I'd love to make useful scripts and websites about
+        my hobbies and also read a lot of books and comics!
       </p>
       <div className="social">
         {SOCIAL.data.map((btn) => {
